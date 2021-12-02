@@ -1,0 +1,55 @@
+.container_student {
+  margin: 10px;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  flex-wrap: wrap;
+  .card {
+    width: 300px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 10px 5px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      height: 100px;
+
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../../img/background.jpg");
+      background-size: cover;
+      background-position: center;
+      color: $primary_color;
+    }
+    .content {
+      .result {
+        color: red;
+      }
+      button {
+        margin: 5px auto;
+        padding: 10px 20px;
+        width: 100%;
+        border: none;
+        background-color: #4285f4;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      .alert {
+        background-color: red;
+      }
+      .time_start {
+        font-weight: bold;
+      }
+    }
+  }
+}

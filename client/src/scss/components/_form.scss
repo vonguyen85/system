@@ -1,0 +1,58 @@
+
+.form {
+    @include setBackground;
+    form{
+        @include centerScreen;
+        text-align: center;
+
+        h1{
+            color: $primary_color;
+            font-size: 1.5em;
+        }
+
+        input{
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px 5px;
+            background-color: rgb(122, 120, 120);
+            font-size: 1.1em;
+            
+            outline: none;
+            border: none;
+            
+            color: #fff;
+
+            &::placeholder{
+                color: #ccc;
+            }
+        }
+
+        button{
+            padding: 10px 20px;
+            width: 100%;
+            background-color: $secondary_color;
+            color: $primary_color;
+            outline: none;
+            border: none;
+            margin-bottom: 20px;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        div{
+            padding: 7px 0;
+            width: 100%;
+            color: $primary_color;
+            background-color: $third_color;
+            a{
+                font-size: 0.8em;
+                color: $primary_color;
+            }
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}

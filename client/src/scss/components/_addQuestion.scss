@@ -1,0 +1,87 @@
+.row{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    
+    .order{
+        flex-basis: 7%;
+    }
+    .content{
+        flex-basis: 40%;
+    }
+    .answer{
+        flex-basis: 40%;
+    }
+    .exactly{
+        flex-basis: 12%;
+    }
+    .col{
+        padding: 5px 10px;
+    }
+    .error{
+        color: red;
+    }
+    .action{
+        flex-basis: 8%;
+    }
+    .check{
+        flex-basis: 4%;
+    }
+}
+
+.row.header{
+    font-weight: 600;
+    text-align: center;
+    background-color: lightslategray;
+    padding: 0;
+
+}
+
+.upload{
+    display: flex;
+    flex-direction: column;
+    select{
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    }
+    #file-upload{
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        display: none;
+    }
+    label{
+        padding: 10px 20px;
+        background-color: $secondary_color;
+        color: $primary_color;
+    
+        cursor: pointer;
+    
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    
+}
+
+.blue{
+    color:blue;
+}
+
+.edit {
+    color: $secondary_color;
+    cursor: pointer;
+}
+.delete {
+    color: red;
+    cursor: pointer;
+  }
+
+  .flex{
+      display: flex;
+      align-items: center;
+  }
+
+  .error{
+    color: red; 
+   }
+

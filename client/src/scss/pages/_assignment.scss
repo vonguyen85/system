@@ -1,0 +1,87 @@
+.container_testing{
+    margin: 20px;
+    @include mobile{
+        margin-left: 2px;
+    }
+    @include tablet{
+        margin-left: 2px;
+    }
+    position: relative;
+    .content{
+        width: 80%;
+        margin-bottom: 5px;
+        p{
+            font-weight: bold;
+        }
+        .answer{
+            margin-left: 15px;
+            span{
+                margin-left: 5px;
+            }
+        }
+    }
+    .timecount{
+        width: 15%;
+        position: fixed;
+        right: 5px;
+        top: 5px;
+        padding: 5px 10px;
+        @include mobile{
+            margin-left: 2px;
+        }
+        @include tablet{
+            margin-left: 2px;
+        }
+        h5{
+            color: blue;
+            display: none;
+            @include desktop{
+                display: block;
+            }
+        }
+        background-color: #ccc;
+        .timeleft{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .action{
+            text-align: center;
+             button{
+                padding: 5px 20px;
+                background-color: $secondary_color;
+                color: $primary_color;
+                outline: none;
+                border: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+    
+    
+}
+
+.back{
+    button{
+        padding: 5px 20px;
+        background-color: $secondary_color;
+        color: $primary_color;
+        outline: none;
+        border: none;
+        margin-bottom: 10px;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+.exact{
+    color: blue;
+}
+.fail{
+    color: red;
+}

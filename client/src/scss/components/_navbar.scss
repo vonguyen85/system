@@ -1,0 +1,102 @@
+.navbar {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+  .menu-btn {
+    display: none;
+    @include mobile {
+      display: block;
+      z-index: 9999;
+    }
+  }
+
+  .over_lay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 75px;
+    left: 0;
+
+    display: none;
+  }
+  .check {
+    display: none;
+  }
+  #click:checked ~ nav {
+    display: block;
+    position: fixed;
+    top: 75px;
+    left: 0;
+  }
+  #click:checked ~ .over_lay {
+    display: block;
+  }
+  .logo {
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: orangered;
+    padding: 10px;
+    &:hover{
+      opacity: .7;
+      cursor: pointer;
+    }
+    span {
+      width: 100px;
+      color: white;
+    }
+  }
+  nav {
+    @include mobile {
+      display: none;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        list-style: none;
+        padding: 10px 30px;
+        a {
+          color: $secondary_color;
+          text-transform: uppercase;
+          &:hover {
+            color: $third_color;
+          }
+        }
+      }
+      @include mobile {
+        display: block;
+        background-color: cornsilk;
+        width: 100%;
+        height: 100vh;
+
+        z-index: 9999;
+      }
+    }
+  }
+  .icons {
+    margin-right: 10px;
+    .user {
+      // background-color: $secondary_color;
+      padding: 4px 10px;
+      color: orangered;
+      border-radius: 5px;
+      &:hover {
+        cursor: pointer;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+.icons__action {
+  padding: 3px 10px;
+  &:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+  }
+}
